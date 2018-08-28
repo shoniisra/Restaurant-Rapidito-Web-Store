@@ -1,0 +1,44 @@
+{
+    "name": "ushainformatique/whatacart",
+    "description": "Open Source Ecommerce Platform",
+    "keywords": ["whatacart", "ecommerce", "open source ecommerce"],
+    "homepage": "http://www.whatacart.com/",
+    "type": "project",
+    "license": "GPLv3",
+    "support": {
+        "issues": "https://github.com/ushainformatique/whatacart/issues"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "2.0.11",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*",
+        "branchonline/yii2-lightbox": "*",
+        "2amigos/yii2-date-time-picker-widget": "*",
+        "2amigos/yii2-date-picker-widget": "*",
+        "2amigos/yii2-taggable-behavior": "*",
+        "2amigos/yii2-selectize-widget": "*",
+        "kartik-v/yii2-widget-rating": "*",
+		"kartik-v/bootstrap-star-rating": "@dev",
+        "marqu3s/yii2-summernote": "dev-master",
+        "fortawesome/font-awesome": "*",
+        "ushainformatique/yiichimp": "*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-imagine": "*",
+        "linslin/yii2-curl": "*"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "vendor-dir": "vendor",
+        "fxp-asset": {
+            "installer-paths": {
+              "npm-asset-library": "vendor/npm",
+              "bower-asset-library": "vendor/bower"
+            }
+          }
+    }
+}

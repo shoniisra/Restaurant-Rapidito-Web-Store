@@ -1,0 +1,1324 @@
+2018-08-03 12:22:41 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Connection.php:630
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Connection.php(630): PDO->__construct('mysql:host=loca...', 'user', 'user', NULL)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare(true)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one(NULL)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\ushainformatique\yiichimp\library\modules\users\traits\AuthIdentityTrait.php(107): yii\db\BaseActiveRecord::findOne(Array)
+#11 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\User.php(564): usni\library\modules\users\models\User::findIdentity(1)
+#12 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\User.php(287): yii\web\User->getIdentityAndDurationFromCookie()
+#13 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\User.php(674): yii\web\User->loginByCookie()
+#14 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\User.php(188): yii\web\User->renewAuthStatus()
+#15 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\User.php(343): yii\web\User->getIdentity()
+#16 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\ushainformatique\yiichimp\library\business\Manager.php(64): yii\web\User->getId()
+#17 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Object.php(107): usni\library\business\Manager->init()
+#18 [internal function]: yii\base\Object->__construct(Array)
+#19 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#20 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('usni\\library\\bu...', Array, Array)
+#21 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('usni\\library\\bu...', Array, Array)
+#22 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\di\ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#23 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\di\ServiceLocator.php(73): yii\di\ServiceLocator->get('configManager')
+#24 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\traits\WebApplicationTrait.php(24): yii\di\ServiceLocator->__get('configManager')
+#25 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\web\Application.php(24): backend\web\Application->setDatabaseConfig()
+#26 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Object.php(107): backend\web\Application->init()
+#27 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(205): yii\base\Object->__construct(Array)
+#28 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(46): yii\base\Application->__construct(Array)
+#29 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Connection.php:568
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare(true)
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one(NULL)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\ushainformatique\yiichimp\library\modules\users\traits\AuthIdentityTrait.php(107): yii\db\BaseActiveRecord::findOne(Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\User.php(564): usni\library\modules\users\models\User::findIdentity(1)
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\User.php(287): yii\web\User->getIdentityAndDurationFromCookie()
+#11 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\User.php(674): yii\web\User->loginByCookie()
+#12 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\User.php(188): yii\web\User->renewAuthStatus()
+#13 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\User.php(343): yii\web\User->getIdentity()
+#14 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\ushainformatique\yiichimp\library\business\Manager.php(64): yii\web\User->getId()
+#15 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Object.php(107): usni\library\business\Manager->init()
+#16 [internal function]: yii\base\Object->__construct(Array)
+#17 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\di\Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#18 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('usni\\library\\bu...', Array, Array)
+#19 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('usni\\library\\bu...', Array, Array)
+#20 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\di\ServiceLocator.php(135): yii\BaseYii::createObject(Array)
+#21 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\di\ServiceLocator.php(73): yii\di\ServiceLocator->get('configManager')
+#22 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\traits\WebApplicationTrait.php(24): yii\di\ServiceLocator->__get('configManager')
+#23 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\web\Application.php(24): backend\web\Application->setDatabaseConfig()
+#24 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Object.php(107): backend\web\Application->init()
+#25 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(205): yii\base\Object->__construct(Array)
+#26 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(46): yii\base\Application->__construct(Array)
+#27 {main}
+Additional Information:
+
+2018-08-03 12:22:25 [::1][-][-][info][application] $_COOKIE = [
+    '_identity' => '6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a:2:{i:0;s:9:\"_identity\";i:1;s:214:\"[6,\"241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782\",2592000]\";}'
+    '_backendUser' => '95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"NDhIzNy3k1QgjX1oRepU1v055IC6_jUb\",2592000]\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A214%3A%22%5B6%2C%22241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782%22%2C2592000%5D%22%3B%7D; _backendUser=95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NDhIzNy3k1QgjX1oRepU1v055IC6_jUb%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.1.9;C:\\wamp64\\www\\RestaurantATM;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) PHP/5.6.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) PHP/5.6.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/release-2.0.1/release-2.0.1/backend/index.php'
+    'REMOTE_PORT' => '53012'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/release-2.0.1/release-2.0.1/backend/index.php/language/default/index'
+    'SCRIPT_NAME' => '/release-2.0.1/release-2.0.1/backend/index.php'
+    'PATH_INFO' => '/language/default/index'
+    'PATH_TRANSLATED' => 'C:\\wamp64\\www\\language\\default\\index'
+    'PHP_SELF' => '/release-2.0.1/release-2.0.1/backend/index.php/language/default/index'
+    'REQUEST_TIME_FLOAT' => 1533298943.322
+    'REQUEST_TIME' => 1533298943
+]
+2018-08-06 00:52:31 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php:846
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(846): PDOStatement->execute()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null
+The SQL being executed was: INSERT INTO `tbl_store_configuration` (`store_id`, `code`, `category`, `key`, `value`, `created_by`, `created_datetime`, `modified_by`, `modified_datetime`) VALUES (1, 'cashondelivery', 'payment', 'order_status', NULL, 1, '2018-08-06 00:52:31', 1, '2018-08-06 00:52:31')' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(856): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `tb...')
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+
+2018-08-06 00:52:27 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'id' => '1'
+    'status' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => '6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a:2:{i:0;s:9:\"_identity\";i:1;s:214:\"[6,\"241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782\",2592000]\";}'
+    '_backendUser' => '95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"NDhIzNy3k1QgjX1oRepU1v055IC6_jUb\",2592000]\";}'
+    'PHPBACKSESSID' => 'sdmq1ohnthck77fdiocsm5qpp5'
+    '_csrf' => 'fe288957859ca4f41f8852bd0e5bfe861d417ca4d40670bbdb7ba9d83de9e321a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JeiEaYPD7sJobdcSV6jo8P0XSWgKZN7M\";}'
+    '_frontendCSRF' => 'e4ce9d63ba5dc557dd89b0f226c7a889cdce0d74739da4da4264526dee6356dea:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"RLvJrR83QQjYbmNKRnU745K4elIdUSWE\";}'
+    'PHPFRONTSESSID' => '1ie9njvrkjdu4ikt8jl7l7vc64'
+    '_frontendCustomer' => '6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa:2:{i:0;s:17:\"_frontendCustomer\";i:1;s:46:\"[5,\"ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk\",2592000]\";}'
+    'arp_scroll_position' => '220.90908813476562'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'customer' => 'O:27:\"backend\\components\\Customer\":5:{s:4:\"cart\";O:21:\"cart\\models\\AdminCart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:41:\"common\\modules\\order\\models\\AdminCheckout\":13:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"confirmOrderEditForm\";O:53:\"common\\modules\\order\\models\\AdminConfirmOrderEditForm\":7:{s:6:\"status\";N;s:8:\"comments\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:12:\"customerForm\";O:40:\"common\\modules\\order\\models\\CustomerForm\":8:{s:10:\"customerId\";N;s:7:\"storeId\";N;s:12:\"currencyCode\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:16:\"orderProductForm\";O:44:\"common\\modules\\order\\models\\OrderProductForm\":7:{s:10:\"product_id\";N;s:8:\"quantity\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:10:\"customerId\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/release-2.0.1/release-2.0.1/backend/index.php/payment/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A214%3A%22%5B6%2C%22241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782%22%2C2592000%5D%22%3B%7D; _backendUser=95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NDhIzNy3k1QgjX1oRepU1v055IC6_jUb%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=sdmq1ohnthck77fdiocsm5qpp5; _csrf=fe288957859ca4f41f8852bd0e5bfe861d417ca4d40670bbdb7ba9d83de9e321a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JeiEaYPD7sJobdcSV6jo8P0XSWgKZN7M%22%3B%7D; _frontendCSRF=e4ce9d63ba5dc557dd89b0f226c7a889cdce0d74739da4da4264526dee6356dea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22RLvJrR83QQjYbmNKRnU745K4elIdUSWE%22%3B%7D; PHPFRONTSESSID=1ie9njvrkjdu4ikt8jl7l7vc64; _frontendCustomer=6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendCustomer%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk%22%2C2592000%5D%22%3B%7D; arp_scroll_position=220.90908813476562'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.1.9;C:\\wamp64\\www\\RestaurantATM;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) PHP/5.6.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) PHP/5.6.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/release-2.0.1/release-2.0.1/backend/index.php'
+    'REMOTE_PORT' => '58232'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&status=1'
+    'REQUEST_URI' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status?id=1&status=1'
+    'SCRIPT_NAME' => '/release-2.0.1/release-2.0.1/backend/index.php'
+    'PATH_INFO' => '/payment/cashondelivery/default/change-status'
+    'PATH_TRANSLATED' => 'C:\\wamp64\\www\\payment\\cashondelivery\\default\\change-status'
+    'PHP_SELF' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status'
+    'REQUEST_TIME_FLOAT' => 1533534747.982
+    'REQUEST_TIME' => 1533534747
+]
+2018-08-06 01:00:37 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\db\Exception] exception 'yii\db\Exception' with message 'this model is associated to product' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\localization\modules\lengthclass\models\LengthClass.php:85
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\ActiveRecord.php(642): common\modules\localization\modules\lengthclass\models\LengthClass->beforeDelete()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\ActiveRecord.php(613): yii\db\ActiveRecord->deleteInternal()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\ushainformatique\yiichimp\library\business\Manager.php(343): yii\db\ActiveRecord->delete()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\ushainformatique\yiichimp\library\business\Manager.php(306): usni\library\business\Manager->deleteModel(Object(common\modules\localization\modules\lengthclass\models\LengthClass))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\ushainformatique\yiichimp\library\web\actions\BulkDeleteAction.php(49): usni\library\business\Manager->processBulkDelete(Object(usni\library\dto\GridViewDTO))
+#5 [internal function]: usni\library\web\actions\BulkDeleteAction->run()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\Action->runWithParams(Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('bulk-delete', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('localization/le...', Array)
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+)
+
+2018-08-06 01:00:37 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'id' => [
+        0 => '3'
+        1 => '4'
+    ]
+]
+
+$_COOKIE = [
+    '_identity' => '6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a:2:{i:0;s:9:\"_identity\";i:1;s:214:\"[6,\"241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782\",2592000]\";}'
+    '_backendUser' => '95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"NDhIzNy3k1QgjX1oRepU1v055IC6_jUb\",2592000]\";}'
+    'PHPBACKSESSID' => 'sdmq1ohnthck77fdiocsm5qpp5'
+    '_csrf' => 'fe288957859ca4f41f8852bd0e5bfe861d417ca4d40670bbdb7ba9d83de9e321a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JeiEaYPD7sJobdcSV6jo8P0XSWgKZN7M\";}'
+    '_frontendCSRF' => 'e4ce9d63ba5dc557dd89b0f226c7a889cdce0d74739da4da4264526dee6356dea:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"RLvJrR83QQjYbmNKRnU745K4elIdUSWE\";}'
+    'PHPFRONTSESSID' => '1ie9njvrkjdu4ikt8jl7l7vc64'
+    '_frontendCustomer' => '6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa:2:{i:0;s:17:\"_frontendCustomer\";i:1;s:46:\"[5,\"ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk\",2592000]\";}'
+    'arp_scroll_position' => '536.3636474609375'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'customer' => 'O:27:\"backend\\components\\Customer\":5:{s:4:\"cart\";O:21:\"cart\\models\\AdminCart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:41:\"common\\modules\\order\\models\\AdminCheckout\":13:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"confirmOrderEditForm\";O:53:\"common\\modules\\order\\models\\AdminConfirmOrderEditForm\":7:{s:6:\"status\";N;s:8:\"comments\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:12:\"customerForm\";O:40:\"common\\modules\\order\\models\\CustomerForm\":8:{s:10:\"customerId\";N;s:7:\"storeId\";N;s:12:\"currencyCode\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:16:\"orderProductForm\";O:44:\"common\\modules\\order\\models\\OrderProductForm\":7:{s:10:\"product_id\";N;s:8:\"quantity\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:10:\"customerId\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html, */*; q=0.01'
+    'HTTP_X_CSRF_TOKEN' => 'OWhQTzhuRzdzDTkKWTcXcw4bGiBaCiRkb146IAA.d29qPzcEYiBweg=='
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/release-2.0.1/release-2.0.1/backend/index.php/localization/lengthclass/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A214%3A%22%5B6%2C%22241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782%22%2C2592000%5D%22%3B%7D; _backendUser=95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NDhIzNy3k1QgjX1oRepU1v055IC6_jUb%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=sdmq1ohnthck77fdiocsm5qpp5; _csrf=fe288957859ca4f41f8852bd0e5bfe861d417ca4d40670bbdb7ba9d83de9e321a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JeiEaYPD7sJobdcSV6jo8P0XSWgKZN7M%22%3B%7D; _frontendCSRF=e4ce9d63ba5dc557dd89b0f226c7a889cdce0d74739da4da4264526dee6356dea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22RLvJrR83QQjYbmNKRnU745K4elIdUSWE%22%3B%7D; PHPFRONTSESSID=1ie9njvrkjdu4ikt8jl7l7vc64; _frontendCustomer=6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendCustomer%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk%22%2C2592000%5D%22%3B%7D; arp_scroll_position=536.3636474609375'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.1.9;C:\\wamp64\\www\\RestaurantATM;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) PHP/5.6.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) PHP/5.6.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/release-2.0.1/release-2.0.1/backend/index.php'
+    'REMOTE_PORT' => '58350'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id%5B%5D=3&id%5B%5D=4'
+    'REQUEST_URI' => '/release-2.0.1/release-2.0.1/backend/index.php/localization/lengthclass/default/bulk-delete?id%5B%5D=3&id%5B%5D=4'
+    'SCRIPT_NAME' => '/release-2.0.1/release-2.0.1/backend/index.php'
+    'PATH_INFO' => '/localization/lengthclass/default/bulk-delete'
+    'PATH_TRANSLATED' => 'C:\\wamp64\\www\\localization\\lengthclass\\default\\bulk-delete'
+    'PHP_SELF' => '/release-2.0.1/release-2.0.1/backend/index.php/localization/lengthclass/default/bulk-delete'
+    'REQUEST_TIME_FLOAT' => 1533535237.338
+    'REQUEST_TIME' => 1533535237
+]
+2018-08-06 01:35:19 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php:846
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(846): PDOStatement->execute()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null
+The SQL being executed was: INSERT INTO `tbl_store_configuration` (`store_id`, `code`, `category`, `key`, `value`, `created_by`, `created_datetime`, `modified_by`, `modified_datetime`) VALUES (1, 'cashondelivery', 'payment', 'order_status', NULL, 1, '2018-08-06 01:35:19', 1, '2018-08-06 01:35:19')' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(856): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `tb...')
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+
+2018-08-06 01:35:19 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'id' => '1'
+    'status' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => '6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a:2:{i:0;s:9:\"_identity\";i:1;s:214:\"[6,\"241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782\",2592000]\";}'
+    '_backendUser' => '95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"NDhIzNy3k1QgjX1oRepU1v055IC6_jUb\",2592000]\";}'
+    'PHPBACKSESSID' => 'sdmq1ohnthck77fdiocsm5qpp5'
+    '_csrf' => 'fe288957859ca4f41f8852bd0e5bfe861d417ca4d40670bbdb7ba9d83de9e321a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"JeiEaYPD7sJobdcSV6jo8P0XSWgKZN7M\";}'
+    '_frontendCSRF' => 'e4ce9d63ba5dc557dd89b0f226c7a889cdce0d74739da4da4264526dee6356dea:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"RLvJrR83QQjYbmNKRnU745K4elIdUSWE\";}'
+    'PHPFRONTSESSID' => '1ie9njvrkjdu4ikt8jl7l7vc64'
+    '_frontendCustomer' => '6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa:2:{i:0;s:17:\"_frontendCustomer\";i:1;s:46:\"[5,\"ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk\",2592000]\";}'
+    'whatacartAdminCurrency' => 'b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a:2:{i:0;s:22:\"whatacartAdminCurrency\";i:1;s:3:\"USD\";}'
+    'arp_scroll_position' => '0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'customer' => 'O:27:\"backend\\components\\Customer\":5:{s:4:\"cart\";O:21:\"cart\\models\\AdminCart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:1:{i:57;O:16:\"cart\\models\\Item\":16:{s:24:\"\0cart\\models\\Item\0_price\";s:4:\"1.25\";s:31:\"\0cart\\models\\Item\0_optionsPrice\";i:0;s:23:\"\0cart\\models\\Item\0_name\";s:19:\"Helado de Chocolate\";s:34:\"\0cart\\models\\Item\0_requireShipping\";s:1:\"1\";s:35:\"\0cart\\models\\Item\0_displayedOptions\";N;s:30:\"\0cart\\models\\Item\0_optionsData\";s:6:\"a:0:{}\";s:31:\"\0cart\\models\\Item\0_inputOptions\";s:6:\"a:0:{}\";s:28:\"\0cart\\models\\Item\0_productId\";s:2:\"57\";s:22:\"\0cart\\models\\Item\0_qty\";s:1:\"1\";s:24:\"\0cart\\models\\Item\0_model\";s:0:\"\";s:28:\"\0cart\\models\\Item\0_thumbnail\";s:37:\"ZDNjMjUxMTpro_CHOCOLATE ICE CREAM.png\";s:27:\"\0cart\\models\\Item\0_itemCode\";s:2:\"57\";s:30:\"\0cart\\models\\Item\0_stockStatus\";s:1:\"1\";s:23:\"\0cart\\models\\Item\0_type\";s:1:\"1\";s:22:\"\0cart\\models\\Item\0_tax\";s:4:\"0.00\";s:29:\"\0cart\\models\\Item\0_totalPrice\";d:1.25;}}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:41:\"common\\modules\\order\\models\\AdminCheckout\":13:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:28;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:28;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:28;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:28;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:28;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:28;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"confirmOrderEditForm\";O:53:\"common\\modules\\order\\models\\AdminConfirmOrderEditForm\":7:{s:6:\"status\";N;s:8:\"comments\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:12:\"customerForm\";O:40:\"common\\modules\\order\\models\\CustomerForm\":8:{s:10:\"customerId\";s:1:\"5\";s:7:\"storeId\";s:1:\"1\";s:12:\"currencyCode\";s:3:\"USD\";s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";C:11:\"ArrayObject\":885:{x:i:0;a:2:{i:0;O:32:\"yii\\validators\\RequiredValidator\":14:{s:11:\"skipOnEmpty\";b:0;s:13:\"requiredValue\";N;s:6:\"strict\";b:0;s:7:\"message\";s:28:\"{attribute} cannot be blank.\";s:10:\"attributes\";a:3:{i:0;s:10:\"customerId\";i:1;s:7:\"storeId\";i:2;s:12:\"currencyCode\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:1;O:28:\"yii\\validators\\SafeValidator\":12:{s:10:\"attributes\";a:3:{i:0;s:10:\"customerId\";i:1;s:7:\"storeId\";i:2;s:12:\"currencyCode\";}s:7:\"message\";N;s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}};m:a:0:{}}s:25:\"\0yii\\base\\Model\0_scenario\";s:6:\"create\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}}s:16:\"orderProductForm\";O:44:\"common\\modules\\order\\models\\OrderProductForm\":7:{s:10:\"product_id\";N;s:8:\"quantity\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:10:\"customerId\";s:1:\"5\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/release-2.0.1/release-2.0.1/backend/index.php/payment/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A214%3A%22%5B6%2C%22241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782%22%2C2592000%5D%22%3B%7D; _backendUser=95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NDhIzNy3k1QgjX1oRepU1v055IC6_jUb%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=sdmq1ohnthck77fdiocsm5qpp5; _csrf=fe288957859ca4f41f8852bd0e5bfe861d417ca4d40670bbdb7ba9d83de9e321a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22JeiEaYPD7sJobdcSV6jo8P0XSWgKZN7M%22%3B%7D; _frontendCSRF=e4ce9d63ba5dc557dd89b0f226c7a889cdce0d74739da4da4264526dee6356dea%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22RLvJrR83QQjYbmNKRnU745K4elIdUSWE%22%3B%7D; PHPFRONTSESSID=1ie9njvrkjdu4ikt8jl7l7vc64; _frontendCustomer=6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendCustomer%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk%22%2C2592000%5D%22%3B%7D; whatacartAdminCurrency=b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22whatacartAdminCurrency%22%3Bi%3A1%3Bs%3A3%3A%22USD%22%3B%7D; arp_scroll_position=0'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.1.9;C:\\wamp64\\www\\RestaurantATM;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) PHP/5.6.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) PHP/5.6.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/release-2.0.1/release-2.0.1/backend/index.php'
+    'REMOTE_PORT' => '58797'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&status=1'
+    'REQUEST_URI' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status?id=1&status=1'
+    'SCRIPT_NAME' => '/release-2.0.1/release-2.0.1/backend/index.php'
+    'PATH_INFO' => '/payment/cashondelivery/default/change-status'
+    'PATH_TRANSLATED' => 'C:\\wamp64\\www\\payment\\cashondelivery\\default\\change-status'
+    'PHP_SELF' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status'
+    'REQUEST_TIME_FLOAT' => 1533537319.455
+    'REQUEST_TIME' => 1533537319
+]
+2018-08-06 12:37:26 [::1][1][vu3kkfibi5jtl3v5tmigbgmih7][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php:846
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(846): PDOStatement->execute()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null
+The SQL being executed was: INSERT INTO `tbl_store_configuration` (`store_id`, `code`, `category`, `key`, `value`, `created_by`, `created_datetime`, `modified_by`, `modified_datetime`) VALUES (1, 'cashondelivery', 'payment', 'order_status', NULL, 1, '2018-08-06 12:37:26', 1, '2018-08-06 12:37:26')' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(856): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `tb...')
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+
+2018-08-06 12:37:26 [::1][1][vu3kkfibi5jtl3v5tmigbgmih7][info][application] $_GET = [
+    'id' => '1'
+    'status' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => '6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a:2:{i:0;s:9:\"_identity\";i:1;s:214:\"[6,\"241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782\",2592000]\";}'
+    'hibext_instdsigdipv2' => '1'
+    '_ga' => 'GA1.1.331384922.1533107407'
+    '_backendUser' => '95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"NDhIzNy3k1QgjX1oRepU1v055IC6_jUb\",2592000]\";}'
+    '_gid' => 'GA1.1.695446975.1533545233'
+    'PHPFRONTSESSID' => 'rfoud77ef0nhtmtrfu9ljv0fu6'
+    '_frontendCSRF' => 'b31c05539d166f2b1815676b84b6abe2ae3976336f11d49eb8bced8903451874a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"unZBEgR7DsxuYq2K-auMU7qP6YMc80V9\";}'
+    'trdipcktrffcext' => '1'
+    '_frontendCustomer' => '6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa:2:{i:0;s:17:\"_frontendCustomer\";i:1;s:46:\"[5,\"ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk\",2592000]\";}'
+    'PHPBACKSESSID' => 'vu3kkfibi5jtl3v5tmigbgmih7'
+    '_csrf' => 'c27b7bd349c13fcf9523dbc26f7d60e1adb314d02f79fcb0cc73da9235ad9212a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"HFryrW59stn7fhSbTgyGoJucdxnE67Fo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'customer' => 'O:27:\"backend\\components\\Customer\":5:{s:4:\"cart\";O:21:\"cart\\models\\AdminCart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:41:\"common\\modules\\order\\models\\AdminCheckout\":13:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"confirmOrderEditForm\";O:53:\"common\\modules\\order\\models\\AdminConfirmOrderEditForm\":7:{s:6:\"status\";N;s:8:\"comments\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:12:\"customerForm\";O:40:\"common\\modules\\order\\models\\CustomerForm\":8:{s:10:\"customerId\";N;s:7:\"storeId\";N;s:12:\"currencyCode\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:16:\"orderProductForm\";O:44:\"common\\modules\\order\\models\\OrderProductForm\":7:{s:10:\"product_id\";N;s:8:\"quantity\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:10:\"customerId\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-ES,es-EC;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://localhost/release-2.0.1/release-2.0.1/backend/index.php/payment/default/index'
+    'HTTP_COOKIE' => '_identity=6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A214%3A%22%5B6%2C%22241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782%22%2C2592000%5D%22%3B%7D; hibext_instdsigdipv2=1; _ga=GA1.1.331384922.1533107407; _backendUser=95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NDhIzNy3k1QgjX1oRepU1v055IC6_jUb%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.695446975.1533545233; PHPFRONTSESSID=rfoud77ef0nhtmtrfu9ljv0fu6; _frontendCSRF=b31c05539d166f2b1815676b84b6abe2ae3976336f11d49eb8bced8903451874a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22unZBEgR7DsxuYq2K-auMU7qP6YMc80V9%22%3B%7D; trdipcktrffcext=1; _frontendCustomer=6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendCustomer%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk%22%2C2592000%5D%22%3B%7D; PHPBACKSESSID=vu3kkfibi5jtl3v5tmigbgmih7; _csrf=c27b7bd349c13fcf9523dbc26f7d60e1adb314d02f79fcb0cc73da9235ad9212a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22HFryrW59stn7fhSbTgyGoJucdxnE67Fo%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.1.9;C:\\wamp64\\www\\RestaurantATM;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) PHP/5.6.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) PHP/5.6.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/release-2.0.1/release-2.0.1/backend/index.php'
+    'REMOTE_PORT' => '49587'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&status=1'
+    'REQUEST_URI' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status?id=1&status=1'
+    'SCRIPT_NAME' => '/release-2.0.1/release-2.0.1/backend/index.php'
+    'PATH_INFO' => '/payment/cashondelivery/default/change-status'
+    'PATH_TRANSLATED' => 'C:\\wamp64\\www\\payment\\cashondelivery\\default\\change-status'
+    'PHP_SELF' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status'
+    'REQUEST_TIME_FLOAT' => 1533577046.033
+    'REQUEST_TIME' => 1533577046
+]
+2018-08-07 11:30:21 [::1][1][84ihparbt39hvpk7oi0qnkilb1][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php:846
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(846): PDOStatement->execute()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null
+The SQL being executed was: INSERT INTO `tbl_store_configuration` (`store_id`, `code`, `category`, `key`, `value`, `created_by`, `created_datetime`, `modified_by`, `modified_datetime`) VALUES (1, 'cashondelivery', 'payment', 'order_status', NULL, 1, '2018-08-07 11:30:21', 1, '2018-08-07 11:30:21')' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(856): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `tb...')
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+
+2018-08-07 11:30:21 [::1][1][84ihparbt39hvpk7oi0qnkilb1][info][application] $_GET = [
+    'id' => '1'
+    'status' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => '6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a:2:{i:0;s:9:\"_identity\";i:1;s:214:\"[6,\"241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782\",2592000]\";}'
+    '_backendUser' => '95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"NDhIzNy3k1QgjX1oRepU1v055IC6_jUb\",2592000]\";}'
+    '_frontendCustomer' => '6b84ae161d5a3a01daede762717a7a224896dc42b4ede13d37325ec8fcf01b62a:2:{i:0;s:17:\"_frontendCustomer\";i:1;s:46:\"[4,\"Z0SAh8O1WssIvWFsPE21ZCLRxZ3QPplD\",2592000]\";}'
+    'whatacartAdminCurrency' => 'b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a:2:{i:0;s:22:\"whatacartAdminCurrency\";i:1;s:3:\"USD\";}'
+    'PHPFRONTSESSID' => 'nl5pcnu3lhfc0s3pudph0ipc73'
+    '_frontendCSRF' => '231709670f773877e8ab787589bdb950c9b5655b4586407da73302f7aad128baa:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"ePkEdHOzCVuPE31qpNLnrqjcc64CzuCy\";}'
+    'PHPBACKSESSID' => '84ihparbt39hvpk7oi0qnkilb1'
+    '_csrf' => 'bab12ec0ba677834eddf7d53a2b71e7d4d9db3d81e2d4931d9b6ef97565be756a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"O3wvr2zh66_ueClhjAsRv3InhhqZ_fQB\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'customer' => 'O:27:\"backend\\components\\Customer\":5:{s:4:\"cart\";O:21:\"cart\\models\\AdminCart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:41:\"common\\modules\\order\\models\\AdminCheckout\":13:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"confirmOrderEditForm\";O:53:\"common\\modules\\order\\models\\AdminConfirmOrderEditForm\":7:{s:6:\"status\";N;s:8:\"comments\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:12:\"customerForm\";O:40:\"common\\modules\\order\\models\\CustomerForm\":8:{s:10:\"customerId\";N;s:7:\"storeId\";N;s:12:\"currencyCode\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:16:\"orderProductForm\";O:44:\"common\\modules\\order\\models\\OrderProductForm\":7:{s:10:\"product_id\";N;s:8:\"quantity\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:10:\"customerId\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.119 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/release-2.0.1/release-2.0.1/backend/index.php/payment/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => '_identity=6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A214%3A%22%5B6%2C%22241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782%22%2C2592000%5D%22%3B%7D; _backendUser=95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NDhIzNy3k1QgjX1oRepU1v055IC6_jUb%22%2C2592000%5D%22%3B%7D; _frontendCustomer=6b84ae161d5a3a01daede762717a7a224896dc42b4ede13d37325ec8fcf01b62a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendCustomer%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22Z0SAh8O1WssIvWFsPE21ZCLRxZ3QPplD%22%2C2592000%5D%22%3B%7D; whatacartAdminCurrency=b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22whatacartAdminCurrency%22%3Bi%3A1%3Bs%3A3%3A%22USD%22%3B%7D; PHPFRONTSESSID=nl5pcnu3lhfc0s3pudph0ipc73; _frontendCSRF=231709670f773877e8ab787589bdb950c9b5655b4586407da73302f7aad128baa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22ePkEdHOzCVuPE31qpNLnrqjcc64CzuCy%22%3B%7D; PHPBACKSESSID=84ihparbt39hvpk7oi0qnkilb1; _csrf=bab12ec0ba677834eddf7d53a2b71e7d4d9db3d81e2d4931d9b6ef97565be756a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22O3wvr2zh66_ueClhjAsRv3InhhqZ_fQB%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.1.9;C:\\wamp64\\www\\RestaurantATM;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) PHP/5.6.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) PHP/5.6.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/release-2.0.1/release-2.0.1/backend/index.php'
+    'REMOTE_PORT' => '53354'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&status=1'
+    'REQUEST_URI' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status?id=1&status=1'
+    'SCRIPT_NAME' => '/release-2.0.1/release-2.0.1/backend/index.php'
+    'PATH_INFO' => '/payment/cashondelivery/default/change-status'
+    'PATH_TRANSLATED' => 'C:\\wamp64\\www\\payment\\cashondelivery\\default\\change-status'
+    'PHP_SELF' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status'
+    'REQUEST_TIME_FLOAT' => 1533659421.748
+    'REQUEST_TIME' => 1533659421
+]
+2018-08-07 23:45:36 [::1][1][unjssidm3imdc886si4sggrvr3][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php:846
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(846): PDOStatement->execute()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null
+The SQL being executed was: INSERT INTO `tbl_store_configuration` (`store_id`, `code`, `category`, `key`, `value`, `created_by`, `created_datetime`, `modified_by`, `modified_datetime`) VALUES (1, 'cashondelivery', 'payment', 'order_status', NULL, 1, '2018-08-07 23:45:36', 1, '2018-08-07 23:45:36')' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(856): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `tb...')
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+
+2018-08-07 23:45:36 [::1][1][unjssidm3imdc886si4sggrvr3][info][application] $_GET = [
+    'id' => '1'
+    'status' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => '6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a:2:{i:0;s:9:\"_identity\";i:1;s:214:\"[6,\"241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782\",2592000]\";}'
+    '_backendUser' => '95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"NDhIzNy3k1QgjX1oRepU1v055IC6_jUb\",2592000]\";}'
+    '_frontendCustomer' => '6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa:2:{i:0;s:17:\"_frontendCustomer\";i:1;s:46:\"[5,\"ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk\",2592000]\";}'
+    'whatacartAdminCurrency' => 'b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a:2:{i:0;s:22:\"whatacartAdminCurrency\";i:1;s:3:\"USD\";}'
+    'PHPFRONTSESSID' => 'hhimfh5i4gj9vung8okrf4o9v5'
+    '_frontendCSRF' => '457d8ceed4b34ef4ec8c5413cf114a9ec943775f78860db0f8893050c9d355f4a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"0FyTW-pYqK5f4Krl9iaO4r_9cVFrPlmL\";}'
+    'PHPBACKSESSID' => 'unjssidm3imdc886si4sggrvr3'
+    '_csrf' => '79395ccb69437d9868001c34cf3f99e78685b0c96c34b463dca577d61c817227a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"696yZOKHiVcrU3sA9oBMIhDQjHZ_C2je\";}'
+    'arp_scroll_position' => '417'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'customer' => 'O:27:\"backend\\components\\Customer\":5:{s:4:\"cart\";O:21:\"cart\\models\\AdminCart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:41:\"common\\modules\\order\\models\\AdminCheckout\":13:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"confirmOrderEditForm\";O:53:\"common\\modules\\order\\models\\AdminConfirmOrderEditForm\":7:{s:6:\"status\";N;s:8:\"comments\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:12:\"customerForm\";O:40:\"common\\modules\\order\\models\\CustomerForm\":8:{s:10:\"customerId\";N;s:7:\"storeId\";N;s:12:\"currencyCode\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:16:\"orderProductForm\";O:44:\"common\\modules\\order\\models\\OrderProductForm\":7:{s:10:\"product_id\";N;s:8:\"quantity\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:10:\"customerId\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/release-2.0.1/release-2.0.1/backend/index.php/payment/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A214%3A%22%5B6%2C%22241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782%22%2C2592000%5D%22%3B%7D; _backendUser=95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NDhIzNy3k1QgjX1oRepU1v055IC6_jUb%22%2C2592000%5D%22%3B%7D; _frontendCustomer=6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendCustomer%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk%22%2C2592000%5D%22%3B%7D; whatacartAdminCurrency=b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22whatacartAdminCurrency%22%3Bi%3A1%3Bs%3A3%3A%22USD%22%3B%7D; PHPFRONTSESSID=hhimfh5i4gj9vung8okrf4o9v5; _frontendCSRF=457d8ceed4b34ef4ec8c5413cf114a9ec943775f78860db0f8893050c9d355f4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%220FyTW-pYqK5f4Krl9iaO4r_9cVFrPlmL%22%3B%7D; PHPBACKSESSID=unjssidm3imdc886si4sggrvr3; _csrf=79395ccb69437d9868001c34cf3f99e78685b0c96c34b463dca577d61c817227a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22696yZOKHiVcrU3sA9oBMIhDQjHZ_C2je%22%3B%7D; arp_scroll_position=417'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.1.9;C:\\wamp64\\www\\RestaurantATM;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) PHP/5.6.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) PHP/5.6.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/release-2.0.1/release-2.0.1/backend/index.php'
+    'REMOTE_PORT' => '55859'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&status=1'
+    'REQUEST_URI' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status?id=1&status=1'
+    'SCRIPT_NAME' => '/release-2.0.1/release-2.0.1/backend/index.php'
+    'PATH_INFO' => '/payment/cashondelivery/default/change-status'
+    'PATH_TRANSLATED' => 'C:\\wamp64\\www\\payment\\cashondelivery\\default\\change-status'
+    'PHP_SELF' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status'
+    'REQUEST_TIME_FLOAT' => 1533703536.053
+    'REQUEST_TIME' => 1533703536
+]
+2018-08-07 23:46:27 [::1][1][unjssidm3imdc886si4sggrvr3][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php:846
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(846): PDOStatement->execute()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null
+The SQL being executed was: INSERT INTO `tbl_store_configuration` (`store_id`, `code`, `category`, `key`, `value`, `created_by`, `created_datetime`, `modified_by`, `modified_datetime`) VALUES (1, 'cashondelivery', 'payment', 'order_status', NULL, 1, '2018-08-07 23:46:27', 1, '2018-08-07 23:46:27')' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(856): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `tb...')
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+
+2018-08-07 23:46:27 [::1][1][unjssidm3imdc886si4sggrvr3][info][application] $_GET = [
+    'id' => '1'
+    'status' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => '6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a:2:{i:0;s:9:\"_identity\";i:1;s:214:\"[6,\"241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782\",2592000]\";}'
+    '_backendUser' => '95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"NDhIzNy3k1QgjX1oRepU1v055IC6_jUb\",2592000]\";}'
+    '_frontendCustomer' => '6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa:2:{i:0;s:17:\"_frontendCustomer\";i:1;s:46:\"[5,\"ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk\",2592000]\";}'
+    'whatacartAdminCurrency' => 'b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a:2:{i:0;s:22:\"whatacartAdminCurrency\";i:1;s:3:\"USD\";}'
+    'PHPFRONTSESSID' => 'hhimfh5i4gj9vung8okrf4o9v5'
+    '_frontendCSRF' => '457d8ceed4b34ef4ec8c5413cf114a9ec943775f78860db0f8893050c9d355f4a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"0FyTW-pYqK5f4Krl9iaO4r_9cVFrPlmL\";}'
+    'PHPBACKSESSID' => 'unjssidm3imdc886si4sggrvr3'
+    '_csrf' => '79395ccb69437d9868001c34cf3f99e78685b0c96c34b463dca577d61c817227a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"696yZOKHiVcrU3sA9oBMIhDQjHZ_C2je\";}'
+    'arp_scroll_position' => '417'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'customer' => 'O:27:\"backend\\components\\Customer\":5:{s:4:\"cart\";O:21:\"cart\\models\\AdminCart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:41:\"common\\modules\\order\\models\\AdminCheckout\":13:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"confirmOrderEditForm\";O:53:\"common\\modules\\order\\models\\AdminConfirmOrderEditForm\":7:{s:6:\"status\";N;s:8:\"comments\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:12:\"customerForm\";O:40:\"common\\modules\\order\\models\\CustomerForm\":8:{s:10:\"customerId\";N;s:7:\"storeId\";N;s:12:\"currencyCode\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:16:\"orderProductForm\";O:44:\"common\\modules\\order\\models\\OrderProductForm\":7:{s:10:\"product_id\";N;s:8:\"quantity\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:10:\"customerId\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/release-2.0.1/release-2.0.1/backend/index.php/payment/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A214%3A%22%5B6%2C%22241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782%22%2C2592000%5D%22%3B%7D; _backendUser=95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NDhIzNy3k1QgjX1oRepU1v055IC6_jUb%22%2C2592000%5D%22%3B%7D; _frontendCustomer=6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendCustomer%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk%22%2C2592000%5D%22%3B%7D; whatacartAdminCurrency=b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22whatacartAdminCurrency%22%3Bi%3A1%3Bs%3A3%3A%22USD%22%3B%7D; PHPFRONTSESSID=hhimfh5i4gj9vung8okrf4o9v5; _frontendCSRF=457d8ceed4b34ef4ec8c5413cf114a9ec943775f78860db0f8893050c9d355f4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%220FyTW-pYqK5f4Krl9iaO4r_9cVFrPlmL%22%3B%7D; PHPBACKSESSID=unjssidm3imdc886si4sggrvr3; _csrf=79395ccb69437d9868001c34cf3f99e78685b0c96c34b463dca577d61c817227a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22696yZOKHiVcrU3sA9oBMIhDQjHZ_C2je%22%3B%7D; arp_scroll_position=417'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.1.9;C:\\wamp64\\www\\RestaurantATM;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) PHP/5.6.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) PHP/5.6.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/release-2.0.1/release-2.0.1/backend/index.php'
+    'REMOTE_PORT' => '55865'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&status=1'
+    'REQUEST_URI' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status?id=1&status=1'
+    'SCRIPT_NAME' => '/release-2.0.1/release-2.0.1/backend/index.php'
+    'PATH_INFO' => '/payment/cashondelivery/default/change-status'
+    'PATH_TRANSLATED' => 'C:\\wamp64\\www\\payment\\cashondelivery\\default\\change-status'
+    'PHP_SELF' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status'
+    'REQUEST_TIME_FLOAT' => 1533703587.739
+    'REQUEST_TIME' => 1533703587
+]
+2018-08-07 23:50:27 [::1][1][unjssidm3imdc886si4sggrvr3][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php:846
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(846): PDOStatement->execute()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null
+The SQL being executed was: INSERT INTO `tbl_store_configuration` (`store_id`, `code`, `category`, `key`, `value`, `created_by`, `created_datetime`, `modified_by`, `modified_datetime`) VALUES (1, 'cashondelivery', 'payment', 'order_status', NULL, 1, '2018-08-07 23:50:27', 1, '2018-08-07 23:50:27')' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(856): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `tb...')
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+
+2018-08-07 23:50:26 [::1][1][unjssidm3imdc886si4sggrvr3][info][application] $_GET = [
+    'id' => '1'
+    'status' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => '6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a:2:{i:0;s:9:\"_identity\";i:1;s:214:\"[6,\"241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782\",2592000]\";}'
+    '_backendUser' => '95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"NDhIzNy3k1QgjX1oRepU1v055IC6_jUb\",2592000]\";}'
+    '_frontendCustomer' => '6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa:2:{i:0;s:17:\"_frontendCustomer\";i:1;s:46:\"[5,\"ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk\",2592000]\";}'
+    'whatacartAdminCurrency' => 'b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a:2:{i:0;s:22:\"whatacartAdminCurrency\";i:1;s:3:\"USD\";}'
+    'PHPFRONTSESSID' => 'hhimfh5i4gj9vung8okrf4o9v5'
+    '_frontendCSRF' => '457d8ceed4b34ef4ec8c5413cf114a9ec943775f78860db0f8893050c9d355f4a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"0FyTW-pYqK5f4Krl9iaO4r_9cVFrPlmL\";}'
+    'PHPBACKSESSID' => 'unjssidm3imdc886si4sggrvr3'
+    '_csrf' => '79395ccb69437d9868001c34cf3f99e78685b0c96c34b463dca577d61c817227a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"696yZOKHiVcrU3sA9oBMIhDQjHZ_C2je\";}'
+    'arp_scroll_position' => '417'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'customer' => 'O:27:\"backend\\components\\Customer\":5:{s:4:\"cart\";O:21:\"cart\\models\\AdminCart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:41:\"common\\modules\\order\\models\\AdminCheckout\":13:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"confirmOrderEditForm\";O:53:\"common\\modules\\order\\models\\AdminConfirmOrderEditForm\":7:{s:6:\"status\";N;s:8:\"comments\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:12:\"customerForm\";O:40:\"common\\modules\\order\\models\\CustomerForm\":8:{s:10:\"customerId\";N;s:7:\"storeId\";N;s:12:\"currencyCode\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:16:\"orderProductForm\";O:44:\"common\\modules\\order\\models\\OrderProductForm\":7:{s:10:\"product_id\";N;s:8:\"quantity\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:10:\"customerId\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/release-2.0.1/release-2.0.1/backend/index.php/payment/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A214%3A%22%5B6%2C%22241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782%22%2C2592000%5D%22%3B%7D; _backendUser=95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NDhIzNy3k1QgjX1oRepU1v055IC6_jUb%22%2C2592000%5D%22%3B%7D; _frontendCustomer=6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendCustomer%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk%22%2C2592000%5D%22%3B%7D; whatacartAdminCurrency=b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22whatacartAdminCurrency%22%3Bi%3A1%3Bs%3A3%3A%22USD%22%3B%7D; PHPFRONTSESSID=hhimfh5i4gj9vung8okrf4o9v5; _frontendCSRF=457d8ceed4b34ef4ec8c5413cf114a9ec943775f78860db0f8893050c9d355f4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%220FyTW-pYqK5f4Krl9iaO4r_9cVFrPlmL%22%3B%7D; PHPBACKSESSID=unjssidm3imdc886si4sggrvr3; _csrf=79395ccb69437d9868001c34cf3f99e78685b0c96c34b463dca577d61c817227a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22696yZOKHiVcrU3sA9oBMIhDQjHZ_C2je%22%3B%7D; arp_scroll_position=417'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.1.9;C:\\wamp64\\www\\RestaurantATM;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) PHP/5.6.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) PHP/5.6.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/release-2.0.1/release-2.0.1/backend/index.php'
+    'REMOTE_PORT' => '55873'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&status=1'
+    'REQUEST_URI' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status?id=1&status=1'
+    'SCRIPT_NAME' => '/release-2.0.1/release-2.0.1/backend/index.php'
+    'PATH_INFO' => '/payment/cashondelivery/default/change-status'
+    'PATH_TRANSLATED' => 'C:\\wamp64\\www\\payment\\cashondelivery\\default\\change-status'
+    'PHP_SELF' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status'
+    'REQUEST_TIME_FLOAT' => 1533703826.913
+    'REQUEST_TIME' => 1533703826
+]
+2018-08-07 23:50:42 [::1][1][unjssidm3imdc886si4sggrvr3][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php:846
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(846): PDOStatement->execute()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null
+The SQL being executed was: INSERT INTO `tbl_store_configuration` (`store_id`, `code`, `category`, `key`, `value`, `created_by`, `created_datetime`, `modified_by`, `modified_datetime`) VALUES (1, 'cashondelivery', 'payment', 'order_status', NULL, 1, '2018-08-07 23:50:42', 1, '2018-08-07 23:50:42')' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(856): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `tb...')
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+
+2018-08-07 23:50:42 [::1][1][unjssidm3imdc886si4sggrvr3][info][application] $_GET = [
+    'id' => '1'
+    'status' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => '6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a:2:{i:0;s:9:\"_identity\";i:1;s:214:\"[6,\"241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782\",2592000]\";}'
+    '_backendUser' => '95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"NDhIzNy3k1QgjX1oRepU1v055IC6_jUb\",2592000]\";}'
+    '_frontendCustomer' => '6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa:2:{i:0;s:17:\"_frontendCustomer\";i:1;s:46:\"[5,\"ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk\",2592000]\";}'
+    'whatacartAdminCurrency' => 'b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a:2:{i:0;s:22:\"whatacartAdminCurrency\";i:1;s:3:\"USD\";}'
+    'PHPFRONTSESSID' => 'hhimfh5i4gj9vung8okrf4o9v5'
+    '_frontendCSRF' => '457d8ceed4b34ef4ec8c5413cf114a9ec943775f78860db0f8893050c9d355f4a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"0FyTW-pYqK5f4Krl9iaO4r_9cVFrPlmL\";}'
+    'PHPBACKSESSID' => 'unjssidm3imdc886si4sggrvr3'
+    '_csrf' => '79395ccb69437d9868001c34cf3f99e78685b0c96c34b463dca577d61c817227a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"696yZOKHiVcrU3sA9oBMIhDQjHZ_C2je\";}'
+    'arp_scroll_position' => '417'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'customer' => 'O:27:\"backend\\components\\Customer\":5:{s:4:\"cart\";O:21:\"cart\\models\\AdminCart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:41:\"common\\modules\\order\\models\\AdminCheckout\":13:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"confirmOrderEditForm\";O:53:\"common\\modules\\order\\models\\AdminConfirmOrderEditForm\":7:{s:6:\"status\";N;s:8:\"comments\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:12:\"customerForm\";O:40:\"common\\modules\\order\\models\\CustomerForm\":8:{s:10:\"customerId\";N;s:7:\"storeId\";N;s:12:\"currencyCode\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:16:\"orderProductForm\";O:44:\"common\\modules\\order\\models\\OrderProductForm\":7:{s:10:\"product_id\";N;s:8:\"quantity\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:10:\"customerId\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/release-2.0.1/release-2.0.1/backend/index.php/payment/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A214%3A%22%5B6%2C%22241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782%22%2C2592000%5D%22%3B%7D; _backendUser=95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NDhIzNy3k1QgjX1oRepU1v055IC6_jUb%22%2C2592000%5D%22%3B%7D; _frontendCustomer=6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendCustomer%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk%22%2C2592000%5D%22%3B%7D; whatacartAdminCurrency=b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22whatacartAdminCurrency%22%3Bi%3A1%3Bs%3A3%3A%22USD%22%3B%7D; PHPFRONTSESSID=hhimfh5i4gj9vung8okrf4o9v5; _frontendCSRF=457d8ceed4b34ef4ec8c5413cf114a9ec943775f78860db0f8893050c9d355f4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%220FyTW-pYqK5f4Krl9iaO4r_9cVFrPlmL%22%3B%7D; PHPBACKSESSID=unjssidm3imdc886si4sggrvr3; _csrf=79395ccb69437d9868001c34cf3f99e78685b0c96c34b463dca577d61c817227a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22696yZOKHiVcrU3sA9oBMIhDQjHZ_C2je%22%3B%7D; arp_scroll_position=417'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.1.9;C:\\wamp64\\www\\RestaurantATM;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) PHP/5.6.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) PHP/5.6.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/release-2.0.1/release-2.0.1/backend/index.php'
+    'REMOTE_PORT' => '55875'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&status=1'
+    'REQUEST_URI' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status?id=1&status=1'
+    'SCRIPT_NAME' => '/release-2.0.1/release-2.0.1/backend/index.php'
+    'PATH_INFO' => '/payment/cashondelivery/default/change-status'
+    'PATH_TRANSLATED' => 'C:\\wamp64\\www\\payment\\cashondelivery\\default\\change-status'
+    'PHP_SELF' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status'
+    'REQUEST_TIME_FLOAT' => 1533703842.435
+    'REQUEST_TIME' => 1533703842
+]
+2018-08-07 23:50:50 [::1][1][unjssidm3imdc886si4sggrvr3][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php:846
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(846): PDOStatement->execute()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null
+The SQL being executed was: INSERT INTO `tbl_store_configuration` (`store_id`, `code`, `category`, `key`, `value`, `created_by`, `created_datetime`, `modified_by`, `modified_datetime`) VALUES (1, 'cashondelivery', 'payment', 'order_status', NULL, 1, '2018-08-07 23:50:50', 1, '2018-08-07 23:50:50')' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(856): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `tb...')
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+
+2018-08-07 23:50:50 [::1][1][unjssidm3imdc886si4sggrvr3][info][application] $_GET = [
+    'id' => '1'
+    'status' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => '6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a:2:{i:0;s:9:\"_identity\";i:1;s:214:\"[6,\"241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782\",2592000]\";}'
+    '_backendUser' => '95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"NDhIzNy3k1QgjX1oRepU1v055IC6_jUb\",2592000]\";}'
+    '_frontendCustomer' => '6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa:2:{i:0;s:17:\"_frontendCustomer\";i:1;s:46:\"[5,\"ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk\",2592000]\";}'
+    'whatacartAdminCurrency' => 'b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a:2:{i:0;s:22:\"whatacartAdminCurrency\";i:1;s:3:\"USD\";}'
+    'PHPFRONTSESSID' => 'hhimfh5i4gj9vung8okrf4o9v5'
+    '_frontendCSRF' => '457d8ceed4b34ef4ec8c5413cf114a9ec943775f78860db0f8893050c9d355f4a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"0FyTW-pYqK5f4Krl9iaO4r_9cVFrPlmL\";}'
+    'PHPBACKSESSID' => 'unjssidm3imdc886si4sggrvr3'
+    '_csrf' => '79395ccb69437d9868001c34cf3f99e78685b0c96c34b463dca577d61c817227a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"696yZOKHiVcrU3sA9oBMIhDQjHZ_C2je\";}'
+    'arp_scroll_position' => '417'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'customer' => 'O:27:\"backend\\components\\Customer\":5:{s:4:\"cart\";O:21:\"cart\\models\\AdminCart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:41:\"common\\modules\\order\\models\\AdminCheckout\":13:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"confirmOrderEditForm\";O:53:\"common\\modules\\order\\models\\AdminConfirmOrderEditForm\":7:{s:6:\"status\";N;s:8:\"comments\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:12:\"customerForm\";O:40:\"common\\modules\\order\\models\\CustomerForm\":8:{s:10:\"customerId\";N;s:7:\"storeId\";N;s:12:\"currencyCode\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:16:\"orderProductForm\";O:44:\"common\\modules\\order\\models\\OrderProductForm\":7:{s:10:\"product_id\";N;s:8:\"quantity\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:10:\"customerId\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/release-2.0.1/release-2.0.1/backend/index.php/payment/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A214%3A%22%5B6%2C%22241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782%22%2C2592000%5D%22%3B%7D; _backendUser=95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NDhIzNy3k1QgjX1oRepU1v055IC6_jUb%22%2C2592000%5D%22%3B%7D; _frontendCustomer=6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendCustomer%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk%22%2C2592000%5D%22%3B%7D; whatacartAdminCurrency=b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22whatacartAdminCurrency%22%3Bi%3A1%3Bs%3A3%3A%22USD%22%3B%7D; PHPFRONTSESSID=hhimfh5i4gj9vung8okrf4o9v5; _frontendCSRF=457d8ceed4b34ef4ec8c5413cf114a9ec943775f78860db0f8893050c9d355f4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%220FyTW-pYqK5f4Krl9iaO4r_9cVFrPlmL%22%3B%7D; PHPBACKSESSID=unjssidm3imdc886si4sggrvr3; _csrf=79395ccb69437d9868001c34cf3f99e78685b0c96c34b463dca577d61c817227a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22696yZOKHiVcrU3sA9oBMIhDQjHZ_C2je%22%3B%7D; arp_scroll_position=417'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.1.9;C:\\wamp64\\www\\RestaurantATM;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) PHP/5.6.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) PHP/5.6.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/release-2.0.1/release-2.0.1/backend/index.php'
+    'REMOTE_PORT' => '55877'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&status=1'
+    'REQUEST_URI' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status?id=1&status=1'
+    'SCRIPT_NAME' => '/release-2.0.1/release-2.0.1/backend/index.php'
+    'PATH_INFO' => '/payment/cashondelivery/default/change-status'
+    'PATH_TRANSLATED' => 'C:\\wamp64\\www\\payment\\cashondelivery\\default\\change-status'
+    'PHP_SELF' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status'
+    'REQUEST_TIME_FLOAT' => 1533703850.657
+    'REQUEST_TIME' => 1533703850
+]
+2018-08-08 00:54:53 [::1][1][unjssidm3imdc886si4sggrvr3][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php:846
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(846): PDOStatement->execute()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null
+The SQL being executed was: INSERT INTO `tbl_store_configuration` (`store_id`, `code`, `category`, `key`, `value`, `created_by`, `created_datetime`, `modified_by`, `modified_datetime`) VALUES (1, 'cashondelivery', 'payment', 'order_status', NULL, 1, '2018-08-08 00:54:53', 1, '2018-08-08 00:54:53')' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(856): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `tb...')
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+
+2018-08-08 00:54:53 [::1][1][unjssidm3imdc886si4sggrvr3][info][application] $_GET = [
+    'id' => '1'
+    'status' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => '6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a:2:{i:0;s:9:\"_identity\";i:1;s:214:\"[6,\"241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782\",2592000]\";}'
+    '_backendUser' => '95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"NDhIzNy3k1QgjX1oRepU1v055IC6_jUb\",2592000]\";}'
+    '_frontendCustomer' => '6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa:2:{i:0;s:17:\"_frontendCustomer\";i:1;s:46:\"[5,\"ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk\",2592000]\";}'
+    'PHPFRONTSESSID' => 'hhimfh5i4gj9vung8okrf4o9v5'
+    '_frontendCSRF' => '457d8ceed4b34ef4ec8c5413cf114a9ec943775f78860db0f8893050c9d355f4a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"0FyTW-pYqK5f4Krl9iaO4r_9cVFrPlmL\";}'
+    'PHPBACKSESSID' => 'unjssidm3imdc886si4sggrvr3'
+    '_csrf' => '79395ccb69437d9868001c34cf3f99e78685b0c96c34b463dca577d61c817227a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"696yZOKHiVcrU3sA9oBMIhDQjHZ_C2je\";}'
+    'whatacartAdminCurrency' => 'b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a:2:{i:0;s:22:\"whatacartAdminCurrency\";i:1;s:3:\"USD\";}'
+    'arp_scroll_position' => '96'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'customer' => 'O:27:\"backend\\components\\Customer\":5:{s:4:\"cart\";O:21:\"cart\\models\\AdminCart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:1:{i:56;O:16:\"cart\\models\\Item\":16:{s:24:\"\0cart\\models\\Item\0_price\";s:4:\"0.35\";s:31:\"\0cart\\models\\Item\0_optionsPrice\";i:0;s:23:\"\0cart\\models\\Item\0_name\";s:15:\"Coca Cola 22 0z\";s:34:\"\0cart\\models\\Item\0_requireShipping\";s:1:\"1\";s:35:\"\0cart\\models\\Item\0_displayedOptions\";N;s:30:\"\0cart\\models\\Item\0_optionsData\";s:6:\"a:0:{}\";s:31:\"\0cart\\models\\Item\0_inputOptions\";s:6:\"a:0:{}\";s:28:\"\0cart\\models\\Item\0_productId\";s:2:\"56\";s:22:\"\0cart\\models\\Item\0_qty\";s:1:\"1\";s:24:\"\0cart\\models\\Item\0_model\";s:0:\"\";s:28:\"\0cart\\models\\Item\0_thumbnail\";s:32:\"YzRkZjI0OTpro_COCA COLA 22oz.png\";s:27:\"\0cart\\models\\Item\0_itemCode\";s:2:\"56\";s:30:\"\0cart\\models\\Item\0_stockStatus\";s:1:\"1\";s:23:\"\0cart\\models\\Item\0_type\";s:1:\"1\";s:22:\"\0cart\\models\\Item\0_tax\";i:0;s:29:\"\0cart\\models\\Item\0_totalPrice\";d:0.34999999999999998;}}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:41:\"common\\modules\\order\\models\\AdminCheckout\":13:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:28;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:28;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:28;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:28;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:28;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:28;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"confirmOrderEditForm\";O:53:\"common\\modules\\order\\models\\AdminConfirmOrderEditForm\":7:{s:6:\"status\";N;s:8:\"comments\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:12:\"customerForm\";O:40:\"common\\modules\\order\\models\\CustomerForm\":8:{s:10:\"customerId\";s:1:\"4\";s:7:\"storeId\";s:1:\"1\";s:12:\"currencyCode\";s:3:\"USD\";s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";C:11:\"ArrayObject\":885:{x:i:0;a:2:{i:0;O:32:\"yii\\validators\\RequiredValidator\":14:{s:11:\"skipOnEmpty\";b:0;s:13:\"requiredValue\";N;s:6:\"strict\";b:0;s:7:\"message\";s:28:\"{attribute} cannot be blank.\";s:10:\"attributes\";a:3:{i:0;s:10:\"customerId\";i:1;s:7:\"storeId\";i:2;s:12:\"currencyCode\";}s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}i:1;O:28:\"yii\\validators\\SafeValidator\":12:{s:10:\"attributes\";a:3:{i:0;s:10:\"customerId\";i:1;s:7:\"storeId\";i:2;s:12:\"currencyCode\";}s:7:\"message\";N;s:2:\"on\";a:0:{}s:6:\"except\";a:0:{}s:11:\"skipOnError\";b:1;s:11:\"skipOnEmpty\";b:1;s:22:\"enableClientValidation\";b:1;s:7:\"isEmpty\";N;s:4:\"when\";N;s:10:\"whenClient\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}};m:a:0:{}}s:25:\"\0yii\\base\\Model\0_scenario\";s:6:\"create\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}}s:16:\"orderProductForm\";O:44:\"common\\modules\\order\\models\\OrderProductForm\":7:{s:10:\"product_id\";N;s:8:\"quantity\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:10:\"customerId\";s:1:\"4\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/release-2.0.1/release-2.0.1/backend/index.php/payment/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A214%3A%22%5B6%2C%22241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782%22%2C2592000%5D%22%3B%7D; _backendUser=95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NDhIzNy3k1QgjX1oRepU1v055IC6_jUb%22%2C2592000%5D%22%3B%7D; _frontendCustomer=6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendCustomer%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk%22%2C2592000%5D%22%3B%7D; PHPFRONTSESSID=hhimfh5i4gj9vung8okrf4o9v5; _frontendCSRF=457d8ceed4b34ef4ec8c5413cf114a9ec943775f78860db0f8893050c9d355f4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%220FyTW-pYqK5f4Krl9iaO4r_9cVFrPlmL%22%3B%7D; PHPBACKSESSID=unjssidm3imdc886si4sggrvr3; _csrf=79395ccb69437d9868001c34cf3f99e78685b0c96c34b463dca577d61c817227a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22696yZOKHiVcrU3sA9oBMIhDQjHZ_C2je%22%3B%7D; whatacartAdminCurrency=b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22whatacartAdminCurrency%22%3Bi%3A1%3Bs%3A3%3A%22USD%22%3B%7D; arp_scroll_position=96'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.1.9;C:\\wamp64\\www\\RestaurantATM;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) PHP/5.6.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) PHP/5.6.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/release-2.0.1/release-2.0.1/backend/index.php'
+    'REMOTE_PORT' => '56251'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&status=1'
+    'REQUEST_URI' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status?id=1&status=1'
+    'SCRIPT_NAME' => '/release-2.0.1/release-2.0.1/backend/index.php'
+    'PATH_INFO' => '/payment/cashondelivery/default/change-status'
+    'PATH_TRANSLATED' => 'C:\\wamp64\\www\\payment\\cashondelivery\\default\\change-status'
+    'PHP_SELF' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status'
+    'REQUEST_TIME_FLOAT' => 1533707693.512
+    'REQUEST_TIME' => 1533707693
+]
+2018-08-08 09:56:55 [::1][1][617tfksoq17qo914q6jd708tc3][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php:846
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(846): PDOStatement->execute()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'value' cannot be null
+The SQL being executed was: INSERT INTO `tbl_store_configuration` (`store_id`, `code`, `category`, `key`, `value`, `created_by`, `created_datetime`, `modified_by`, `modified_datetime`) VALUES (1, 'cashondelivery', 'payment', 'order_status', NULL, 1, '2018-08-08 09:56:55', 1, '2018-08-08 09:56:55')' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\db\Command.php(856): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `tb...')
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\stores\business\ConfigManager.php(164): yii\db\Command->execute()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\cashondelivery\Manager.php(45): common\modules\stores\business\ConfigManager->insertStoreConfiguration('cashondelivery', 'payment', 'order_status', NULL, 1)
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\cashondelivery\DefaultController.php(46): common\modules\payment\business\cashondelivery\Manager->processChangeStatus('1', '1')
+#4 [internal function]: common\modules\payment\controllers\cashondelivery\DefaultController->actionChangeStatus('1', '1')
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('change-status', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/cashond...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'value' cannot be null
+)
+
+2018-08-08 09:56:55 [::1][1][617tfksoq17qo914q6jd708tc3][info][application] $_GET = [
+    'id' => '1'
+    'status' => '1'
+]
+
+$_COOKIE = [
+    '_identity' => '6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a:2:{i:0;s:9:\"_identity\";i:1;s:214:\"[6,\"241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782\",2592000]\";}'
+    '_backendUser' => '95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda:2:{i:0;s:12:\"_backendUser\";i:1;s:46:\"[1,\"NDhIzNy3k1QgjX1oRepU1v055IC6_jUb\",2592000]\";}'
+    '_frontendCustomer' => '6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa:2:{i:0;s:17:\"_frontendCustomer\";i:1;s:46:\"[5,\"ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk\",2592000]\";}'
+    'whatacartAdminCurrency' => 'b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a:2:{i:0;s:22:\"whatacartAdminCurrency\";i:1;s:3:\"USD\";}'
+    'arp_scroll_position' => '0'
+    'PHPFRONTSESSID' => '584sq2lj0nn2h51h65o5q71hr6'
+    '_frontendCSRF' => '695a11197be8b0257cf3ba88b22d1381faadc4dd69acb990d12cae7ec59123a4a:2:{i:0;s:13:\"_frontendCSRF\";i:1;s:32:\"ydhPAyWO567kbHlZKgXcHXaZkJQwQay4\";}'
+    'PHPBACKSESSID' => '617tfksoq17qo914q6jd708tc3'
+    '_csrf' => '9c6a22f05f61806e50176c58859eaf573b9cc0a00b7a5370130ba0be886cbeaaa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Gj7vZe_stzi7RasKhTmk-eiJSUgT_n8d\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'customer' => 'O:27:\"backend\\components\\Customer\":5:{s:4:\"cart\";O:21:\"cart\\models\\AdminCart\":6:{s:9:\"itemsList\";O:26:\"cart\\models\\ItemCollection\":1:{s:34:\"\0cart\\models\\ItemCollection\0_items\";a:0:{}}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:8:\"checkout\";O:41:\"common\\modules\\order\\models\\AdminCheckout\":13:{s:5:\"order\";O:33:\"common\\modules\\order\\models\\Order\":13:{s:36:\"\0yii\\db\\BaseActiveRecord\0_attributes\";a:0:{}s:39:\"\0yii\\db\\BaseActiveRecord\0_oldAttributes\";N;s:33:\"\0yii\\db\\BaseActiveRecord\0_related\";a:0:{}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:5:{s:12:\"beforeInsert\";a:2:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:19:\"updateCreatedFields\";}i:1;N;}i:1;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:12:\"beforeUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:20:\"updateModifiedFields\";}i:1;N;}}s:9:\"afterFind\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:12:\"onFindRecord\";}i:1;N;}}s:11:\"afterInsert\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterInsert\";}i:1;N;}}s:11:\"afterUpdate\";a:1:{i:0;a:2:{i:0;a:2:{i:0;r:11;i:1;s:11:\"afterUpdate\";}i:1;N;}}}s:30:\"\0yii\\base\\Component\0_behaviors\";a:0:{}s:8:\"relation\";s:12:\"translations\";s:11:\"localeField\";s:8:\"language\";s:21:\"translationAttributes\";a:1:{i:0;s:17:\"shipping_comments\";}s:10:\"\0*\0_models\";a:0:{}s:51:\"\0usni\\library\\db\\TranslatableActiveRecord\0_language\";N;}s:19:\"billingInfoEditForm\";O:31:\"cart\\models\\BillingInfoEditForm\":16:{s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"deliveryInfoEditForm\";O:32:\"cart\\models\\DeliveryInfoEditForm\":17:{s:20:\"sameAsBillingAddress\";N;s:5:\"email\";N;s:9:\"firstname\";N;s:8:\"lastname\";N;s:11:\"mobilephone\";N;s:11:\"officephone\";N;s:8:\"address1\";N;s:4:\"city\";N;s:7:\"country\";N;s:11:\"postal_code\";N;s:8:\"address2\";N;s:5:\"state\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"deliveryOptionsEditForm\";O:35:\"cart\\models\\DeliveryOptionsEditForm\":8:{s:8:\"shipping\";N;s:8:\"comments\";N;s:12:\"shipping_fee\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:21:\"paymentMethodEditForm\";O:33:\"cart\\models\\PaymentMethodEditForm\":8:{s:14:\"payment_method\";N;s:8:\"comments\";N;s:5:\"agree\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:20:\"confirmOrderEditForm\";O:53:\"common\\modules\\order\\models\\AdminConfirmOrderEditForm\":7:{s:6:\"status\";N;s:8:\"comments\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:12:\"customerForm\";O:40:\"common\\modules\\order\\models\\CustomerForm\":8:{s:10:\"customerId\";N;s:7:\"storeId\";N;s:12:\"currencyCode\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:16:\"orderProductForm\";O:44:\"common\\modules\\order\\models\\OrderProductForm\":7:{s:10:\"product_id\";N;s:8:\"quantity\";N;s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:23:\"\0yii\\base\\Model\0_errors\";N;s:27:\"\0yii\\base\\Model\0_validators\";N;s:25:\"\0yii\\base\\Model\0_scenario\";s:7:\"default\";s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}s:10:\"customerId\";N;s:27:\"\0yii\\base\\Component\0_events\";a:0:{}s:30:\"\0yii\\base\\Component\0_behaviors\";N;}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/release-2.0.1/release-2.0.1/backend/index.php/payment/default/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'es,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_identity=6ff6f5f85e7d77acca0871712c16e5a6fd949016d26a32e9286533b4c7d79e17a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A214%3A%22%5B6%2C%22241f666373e38d701f7f4ea2b47f76b62ebed14819ea0b4441cdef4682243b2987bc999b1d3ff766d179ef48bd284efb4e17c04c60f131e7de834ca7369acf3a63d0545b2002d9d52afc08652d599ec7f5f747c74e80ef11d4c221717387cbb3d67c9782%22%2C2592000%5D%22%3B%7D; _backendUser=95ae89e8904d7aa8f7d50200b0288f324e18b0426d110a8666e074cf7dd168cda%3A2%3A%7Bi%3A0%3Bs%3A12%3A%22_backendUser%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22NDhIzNy3k1QgjX1oRepU1v055IC6_jUb%22%2C2592000%5D%22%3B%7D; _frontendCustomer=6e098492120ece18d87542e3d34c564fee26037934f5a399ae966ec05b9db1bfa%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_frontendCustomer%22%3Bi%3A1%3Bs%3A46%3A%22%5B5%2C%22ICtBxWjo6HYNyje2XhOrCj-dl3ik-7bk%22%2C2592000%5D%22%3B%7D; whatacartAdminCurrency=b2eae4223333c5da00de5d86fd0b825dd5f0ccd3b7ee354649ac605aa69b1cc1a%3A2%3A%7Bi%3A0%3Bs%3A22%3A%22whatacartAdminCurrency%22%3Bi%3A1%3Bs%3A3%3A%22USD%22%3B%7D; arp_scroll_position=0; PHPFRONTSESSID=584sq2lj0nn2h51h65o5q71hr6; _frontendCSRF=695a11197be8b0257cf3ba88b22d1381faadc4dd69acb990d12cae7ec59123a4a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_frontendCSRF%22%3Bi%3A1%3Bs%3A32%3A%22ydhPAyWO567kbHlZKgXcHXaZkJQwQay4%22%3B%7D; PHPBACKSESSID=617tfksoq17qo914q6jd708tc3; _csrf=9c6a22f05f61806e50176c58859eaf573b9cc0a00b7a5370130ba0be886cbeaaa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Gj7vZe_stzi7RasKhTmk-eiJSUgT_n8d%22%3B%7D'
+    'PATH' => 'C:\\wamp64\\bin\\php\\php7.1.9;C:\\wamp64\\www\\RestaurantATM;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.27 (Win64) PHP/5.6.31 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.27 (Win64) PHP/5.6.31'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/release-2.0.1/release-2.0.1/backend/index.php'
+    'REMOTE_PORT' => '58859'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1&status=1'
+    'REQUEST_URI' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status?id=1&status=1'
+    'SCRIPT_NAME' => '/release-2.0.1/release-2.0.1/backend/index.php'
+    'PATH_INFO' => '/payment/cashondelivery/default/change-status'
+    'PATH_TRANSLATED' => 'C:\\wamp64\\www\\payment\\cashondelivery\\default\\change-status'
+    'PHP_SELF' => '/release-2.0.1/release-2.0.1/backend/index.php/payment/cashondelivery/default/change-status'
+    'REQUEST_TIME_FLOAT' => 1533740215.567
+    'REQUEST_TIME' => 1533740215
+]

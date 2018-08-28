@@ -1,0 +1,65 @@
+Message-ID: <6025909e212d3fe40a9a63cd8c51382b@localhost>
+Date: Sun, 05 Aug 2018 21:12:10 -0500
+Subject: Registrar nuevo cliente
+From: Super Admin <villajohnny@gmail.com>
+To: anthoro.53@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1533521530_fc9129bfe406ea0f093bd2c544cfd39f_=_"
+
+
+--_=_swift_v4_1533521530_fc9129bfe406ea0f093bd2c544cfd39f_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Welcome Anthony Cabrera. Your account has been created successfully at Rapi=
+dito
+
+Your login details are as below
+Username: anthoro
+Password: qwerty123.
+
+Please confirm your email by clicking the link be=
+low to activate your account.
+Confirm your email account
+
+Thanks,
+System Admin
+
+--_=_swift_v4_1533521530_fc9129bfe406ea0f093bd2c544cfd39f_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/=
+xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/ht=
+ml; charset=3DUTF-8" />
+    <title></title>
+    </head>
+<body>
+    =
+    <p>Welcome Anthony Cabrera. Your account has been created successfully =
+at Rapidito</p>
+
+<p>Your login details are as below<br /><br/>
+    <strong>Username:</strong> anthoro<br />
+    <strong>Password</strong>: qwerty123.</p>
+
+Please confirm your email by clicking the link below to activate your accou=
+nt.<br/><br/>
+<a href=3D'http://localhost/release-2.0.1/release-2.0.1/customer/site/valid=
+ate-email-address?hash=3DJDJ5JDEzJENSUTV4aUt2clJCZnp4bWt2Ti9OOXVKbFkydFJpRF=
+pzM0J0cXhpSVlOdnZxQUJia1dPNHFH&email=3Danthoro.53@gmail.com'>Confirm your e=
+mail account</a><br/><br/>
+
+Thanks,<br />
+System Admin
+
+    </body>
+</html>
+
+
+--_=_swift_v4_1533521530_fc9129bfe406ea0f093bd2c544cfd39f_=_--

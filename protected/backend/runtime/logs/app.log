@@ -1,0 +1,55 @@
+2018-08-01 18:14:20 [::1][-][-][error][1] The notification template is missing for key: {key}
+2018-08-01 18:14:34 [::1][-][-][error][1] The notification template is missing for key: {key}
+2018-08-01 18:14:37 [::1][-][-][error][1] The notification template is missing for key: {key}
+2018-08-01 18:14:39 [::1][-][-][error][1] The notification template is missing for key: {key}
+2018-08-06 01:42:10 [::1][1][-][error][1] The notification template is missing for key: {key}
+2018-08-06 01:42:10 [::1][1][-][info][application] $_POST = [
+    '_csrf' => 'd1IyY1NQZnU9N1smMgk2MUAheAwxNAUmIWRYDGsAVi0kBVUoCR5ROA=='
+    'EmailSettingsForm' => [
+        'fromName' => 'Rapidito'
+        'fromAddress' => 'shoniisra@gmail.com'
+        'replyToAddress' => 'shoniisra@gmail.com'
+        'sendingMethod' => 'mail'
+        'sendTestMail' => '1'
+        'testEmailAddress' => 'villajohnny@gmail.com'
+        'testMode' => '1'
+        'smtpHost' => 'smtp.gmail.com'
+        'smtpPort' => '587'
+        'smtpUsername' => 'user'
+        'smtpPassword' => 'user123.'
+    ]
+]
+2018-08-07 23:32:22 [::1][1][-][error][1] The notification template is missing for key: {key}
+2018-08-07 23:32:22 [::1][1][-][info][application] $_POST = [
+    '_csrf' => 'TDN1bW9BLUd6CkMUNQ5mDyVlFh86cl4GdVw3ICYpaRYmey8yLHNHIg=='
+    'EmailSettingsForm' => [
+        'fromName' => 'Rapidito'
+        'fromAddress' => 'shoniisra@gmail.com'
+        'replyToAddress' => 'shoniisra@gmail.com'
+        'sendingMethod' => 'mail'
+        'sendTestMail' => '1'
+        'testEmailAddress' => 'shoniisra2@gmail.com'
+        'testMode' => '1'
+        'smtpHost' => 'smtp.gmail.com'
+        'smtpPort' => '587'
+        'smtpUsername' => 'user'
+        'smtpPassword' => 'user123.'
+    ]
+]
+2018-08-07 23:34:23 [::1][1][-][error][1] The notification template is missing for key: {key}
+2018-08-07 23:34:23 [::1][1][-][info][application] $_POST = [
+    '_csrf' => 'V0xLT09teWphdX02FSIyIj4aKD0aXgorbiMJAgYFPTs9BBEQDF8TDw=='
+    'EmailSettingsForm' => [
+        'fromName' => 'Rapidito'
+        'fromAddress' => 'shoniisra@gmail.com'
+        'replyToAddress' => 'shoniisra@gmail.com'
+        'sendingMethod' => 'mail'
+        'sendTestMail' => '1'
+        'testEmailAddress' => 'shoniisra5@gmail.com'
+        'testMode' => '1'
+        'smtpHost' => 'smtp.gmail.com'
+        'smtpPort' => '587'
+        'smtpUsername' => 'user'
+        'smtpPassword' => 'user123.'
+    ]
+]

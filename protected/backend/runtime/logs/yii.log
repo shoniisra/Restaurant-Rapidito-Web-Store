@@ -1,0 +1,836 @@
+2018-08-05 23:45:24 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-05 23:45:24 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'helado'
+]
+2018-08-05 23:45:35 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-05 23:45:35 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'chocola'
+]
+2018-08-05 23:45:36 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-05 23:45:35 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'chocolate'
+]
+2018-08-05 23:45:41 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-05 23:45:41 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'postre'
+]
+2018-08-06 00:05:32 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Canceled_Reversal' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\paypal_standard\Manager.php:446
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\paypal_standard\DefaultController.php(55): common\modules\payment\business\paypal_standard\Manager->processChangeStatus()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): common\modules\payment\controllers\paypal_standard\DefaultController->actionChangeStatus()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#8 {main}
+2018-08-06 00:05:28 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'id' => '2'
+    'status' => '1'
+]
+2018-08-06 00:23:13 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Canceled_Reversal' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\paypal_standard\Manager.php:446
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\paypal_standard\DefaultController.php(55): common\modules\payment\business\paypal_standard\Manager->processChangeStatus()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): common\modules\payment\controllers\paypal_standard\DefaultController->actionChangeStatus()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#8 {main}
+2018-08-06 00:23:13 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'id' => '2'
+    'status' => '1'
+]
+2018-08-06 00:27:29 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Canceled_Reversal' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\paypal_standard\Manager.php:446
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\paypal_standard\DefaultController.php(55): common\modules\payment\business\paypal_standard\Manager->processChangeStatus()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): common\modules\payment\controllers\paypal_standard\DefaultController->actionChangeStatus()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#8 {main}
+2018-08-06 00:27:28 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'id' => '2'
+    'status' => '1'
+]
+2018-08-06 00:30:48 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Canceled_Reversal' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\paypal_standard\Manager.php:446
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\paypal_standard\DefaultController.php(55): common\modules\payment\business\paypal_standard\Manager->processChangeStatus()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): common\modules\payment\controllers\paypal_standard\DefaultController->actionChangeStatus()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#8 {main}
+2018-08-06 00:30:48 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'id' => '2'
+    'status' => '1'
+]
+2018-08-06 00:37:36 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Canceled_Reversal' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\paypal_standard\Manager.php:446
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\paypal_standard\DefaultController.php(55): common\modules\payment\business\paypal_standard\Manager->processChangeStatus()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): common\modules\payment\controllers\paypal_standard\DefaultController->actionChangeStatus()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#8 {main}
+2018-08-06 00:37:36 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'id' => '2'
+    'status' => '1'
+]
+2018-08-06 00:51:40 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: Canceled_Reversal' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\business\paypal_standard\Manager.php:446
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\paypal_standard\DefaultController.php(55): common\modules\payment\business\paypal_standard\Manager->processChangeStatus()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): common\modules\payment\controllers\paypal_standard\DefaultController->actionChangeStatus()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#8 {main}
+2018-08-06 00:51:40 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'id' => '2'
+    'status' => '1'
+]
+2018-08-06 02:29:45 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:29:45 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'hela'
+]
+2018-08-06 02:29:46 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:29:46 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'helado'
+]
+2018-08-06 02:29:48 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:29:48 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'vail'
+]
+2018-08-06 02:29:49 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:29:49 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'vainilla'
+]
+2018-08-06 02:29:51 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:29:50 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'postres'
+]
+2018-08-06 02:50:50 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:50:50 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'postre chocolate avellana'
+]
+2018-08-06 02:50:55 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:50:54 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'co'
+]
+2018-08-06 02:50:55 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:50:55 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'c'
+]
+2018-08-06 02:50:57 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:50:57 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'chocola'
+]
+2018-08-06 02:50:58 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:50:58 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'chocolate'
+]
+2018-08-06 02:50:59 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:50:59 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'a'
+]
+2018-08-06 02:51:08 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:51:07 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'h'
+]
+2018-08-06 02:51:09 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:51:09 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'helado'
+]
+2018-08-06 02:51:11 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:51:10 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'fresa'
+]
+2018-08-06 02:51:12 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:51:12 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'frutas'
+]
+2018-08-06 02:51:14 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:51:14 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'avellana'
+]
+2018-08-06 02:51:14 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:51:14 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'p'
+]
+2018-08-06 02:51:18 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:51:18 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'avella'
+]
+2018-08-06 02:55:00 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:55:00 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'Coca Cola 30 0z'
+]
+2018-08-06 02:56:29 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:56:28 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'coca-cola-44-0z'
+]
+2018-08-06 02:57:38 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:57:38 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'Coca Cola  ZERO 22 0z'
+]
+2018-08-06 02:59:01 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 02:59:01 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'pilsener-mediana'
+]
+2018-08-06 03:03:20 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 03:03:20 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'Pilsener peq'
+]
+2018-08-06 03:08:36 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 03:08:35 [::1][1][sdmq1ohnthck77fdiocsm5qpp5][info][application] $_GET = [
+    'query' => 'Corona peq'
+]
+2018-08-06 09:14:27 [::1][1][r137ctnqg0g85t4hgst9964ot5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 09:14:27 [::1][1][r137ctnqg0g85t4hgst9964ot5][info][application] $_GET = [
+    'query' => 'Hamburguesa Gigante'
+]
+2018-08-06 09:17:07 [::1][1][r137ctnqg0g85t4hgst9964ot5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 09:17:07 [::1][1][r137ctnqg0g85t4hgst9964ot5][info][application] $_GET = [
+    'query' => 'Hamburguesa Mediana'
+]
+2018-08-06 09:18:29 [::1][1][r137ctnqg0g85t4hgst9964ot5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 09:18:29 [::1][1][r137ctnqg0g85t4hgst9964ot5][info][application] $_GET = [
+    'query' => 'Hamburguesa Pequeña'
+]
+2018-08-06 09:26:48 [::1][1][r137ctnqg0g85t4hgst9964ot5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 09:26:47 [::1][1][r137ctnqg0g85t4hgst9964ot5][info][application] $_GET = [
+    'query' => 'Hot Dog'
+]
+2018-08-06 09:28:18 [::1][1][r137ctnqg0g85t4hgst9964ot5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 09:28:18 [::1][1][r137ctnqg0g85t4hgst9964ot5][info][application] $_GET = [
+    'query' => 'Nuggets de Pollo'
+]
+2018-08-06 09:29:52 [::1][1][r137ctnqg0g85t4hgst9964ot5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-06 09:29:52 [::1][1][r137ctnqg0g85t4hgst9964ot5][info][application] $_GET = [
+    'query' => 'Nachos'
+]
+2018-08-07 11:29:20 [::1][1][84ihparbt39hvpk7oi0qnkilb1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "index".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-07 23:07:12 [::1][1][unjssidm3imdc886si4sggrvr3][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: items' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\views\site\_sidenav.php:35
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\ushainformatique\yiichimp\library\web\AdminView.php(58): yii\base\View->render()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\views\layouts\main.php(45): usni\library\web\AdminView->renderLeftColumn()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent()
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\controllers\home\DefaultController.php(41): yii\base\Controller->render()
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\home\DefaultController->actionDashboard()
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#11 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#12 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#13 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#14 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#15 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#16 {main}
+2018-08-07 23:07:35 [::1][1][unjssidm3imdc886si4sggrvr3][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: items' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\views\site\_sidenav.php:35
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\ushainformatique\yiichimp\library\web\AdminView.php(58): yii\base\View->render()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\views\layouts\main.php(45): usni\library\web\AdminView->renderLeftColumn()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent()
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\controllers\home\DefaultController.php(41): yii\base\Controller->render()
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\home\DefaultController->actionDashboard()
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#11 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#12 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#13 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#14 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#15 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#16 {main}
+2018-08-08 00:23:23 [::1][1][unjssidm3imdc886si4sggrvr3][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: catItems' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\config\menu.php:15
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\ushainformatique\yiichimp\library\web\AdminView.php(58): yii\base\View->render()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\views\layouts\main.php(45): usni\library\web\AdminView->renderLeftColumn()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile()
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent()
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\controllers\home\DefaultController.php(41): yii\base\Controller->render()
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\home\DefaultController->actionDashboard()
+#11 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#12 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#13 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#14 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#15 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#16 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#17 {main}
+2018-08-08 00:24:12 [::1][1][unjssidm3imdc886si4sggrvr3][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 2 for yii\helpers\BaseArrayHelper::merge(), called in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\config\menu.php on line 15 and defined' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\helpers\BaseArrayHelper.php:117
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\views\site\_sidenav.php(14): ::unknown()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\ushainformatique\yiichimp\library\web\AdminView.php(58): yii\base\View->render()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\views\layouts\main.php(45): usni\library\web\AdminView->renderLeftColumn()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile()
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent()
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\controllers\home\DefaultController.php(41): yii\base\Controller->render()
+#11 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\home\DefaultController->actionDashboard()
+#12 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#13 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#14 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#15 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#16 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#17 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#18 {main}
+2018-08-08 00:25:21 [::1][1][unjssidm3imdc886si4sggrvr3][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: manItems' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\config\menu.php:15
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\ushainformatique\yiichimp\library\web\AdminView.php(58): yii\base\View->render()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\views\layouts\main.php(45): usni\library\web\AdminView->renderLeftColumn()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile()
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent()
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\controllers\home\DefaultController.php(41): yii\base\Controller->render()
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\home\DefaultController->actionDashboard()
+#11 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#12 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#13 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#14 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#15 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#16 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#17 {main}
+2018-08-08 00:25:34 [::1][1][unjssidm3imdc886si4sggrvr3][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: productItems' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\config\menu.php:15
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\ushainformatique\yiichimp\library\web\AdminView.php(58): yii\base\View->render()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\views\layouts\main.php(45): usni\library\web\AdminView->renderLeftColumn()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile()
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent()
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\controllers\home\DefaultController.php(41): yii\base\Controller->render()
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\home\DefaultController->actionDashboard()
+#11 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#12 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#13 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#14 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#15 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#16 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#17 {main}
+2018-08-08 00:25:42 [::1][1][unjssidm3imdc886si4sggrvr3][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: productPath' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\config\menu.php:11
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\ushainformatique\yiichimp\library\web\AdminView.php(58): yii\base\View->render()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\views\layouts\main.php(45): usni\library\web\AdminView->renderLeftColumn()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile()
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent()
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\backend\controllers\home\DefaultController.php(41): yii\base\Controller->render()
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\home\DefaultController->actionDashboard()
+#11 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#12 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#13 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#14 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#15 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#16 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#17 {main}
+2018-08-08 10:01:52 [::1][1][s9803rd560pet7kgc0opj9mku5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\filters\AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(usni\library\web\User))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('tags', Array)
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('catalog/product...', Array)
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\wamp64\www\release-2.0.1\release-2.0.1\backend\index.php(47): yii\base\Application->run()
+#11 {main}
+2018-08-08 10:01:51 [::1][1][s9803rd560pet7kgc0opj9mku5][info][application] $_GET = [
+    'query' => 'Porcion de Arroz'
+]

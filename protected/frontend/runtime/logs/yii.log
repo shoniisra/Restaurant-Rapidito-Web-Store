@@ -1,0 +1,421 @@
+2018-08-05 22:42:06 [::1][4][61dceqvqeti8bhe9r5ik2kmlj4][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: centimetro' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\modules\products\traits\DimensionTrait.php:120
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\modules\products\traits\DimensionTrait.php(34): products\business\SiteManager->getConvertedDimensions()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\modules\products\business\SiteManager.php(115): products\business\SiteManager->getDimensions()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\modules\products\controllers\SiteController.php(81): products\business\SiteManager->populateDetails()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): products\controllers\SiteController->actionDetail()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#10 {main}
+2018-08-05 22:42:06 [::1][4][61dceqvqeti8bhe9r5ik2kmlj4][info][application] $_GET = [
+    'id' => '45'
+]
+2018-08-05 22:42:11 [::1][4][61dceqvqeti8bhe9r5ik2kmlj4][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: centimetro' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\modules\products\traits\DimensionTrait.php:120
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\modules\products\traits\DimensionTrait.php(34): products\business\SiteManager->getConvertedDimensions()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\modules\products\business\SiteManager.php(115): products\business\SiteManager->getDimensions()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\modules\products\controllers\SiteController.php(81): products\business\SiteManager->populateDetails()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): products\controllers\SiteController->actionDetail()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#10 {main}
+2018-08-05 22:42:11 [::1][4][61dceqvqeti8bhe9r5ik2kmlj4][info][application] $_GET = [
+    'id' => '46'
+]
+2018-08-05 22:43:49 [::1][4][61dceqvqeti8bhe9r5ik2kmlj4][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: centimetro' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\modules\products\traits\DimensionTrait.php:120
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\modules\products\traits\DimensionTrait.php(34): products\business\SiteManager->getConvertedDimensions()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\modules\products\business\SiteManager.php(115): products\business\SiteManager->getDimensions()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\modules\products\controllers\SiteController.php(81): products\business\SiteManager->populateDetails()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): products\controllers\SiteController->actionDetail()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#10 {main}
+2018-08-05 22:43:48 [::1][4][61dceqvqeti8bhe9r5ik2kmlj4][info][application] $_GET = [
+    'id' => '48'
+]
+2018-08-05 22:48:59 [::1][-][r5vrbm53tcu9jeq741gkq8i5u1][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: centimetro' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\modules\products\traits\DimensionTrait.php:120
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\modules\products\traits\DimensionTrait.php(34): products\business\SiteManager->getConvertedDimensions()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\modules\products\business\SiteManager.php(89): products\business\SiteManager->getDimensions()
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\catalog\modules\products\controllers\SiteController.php(149): products\business\SiteManager->getCompareProductsDataProvider()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): products\controllers\SiteController->actionCompareProducts()
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#9 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#10 {main}
+2018-08-05 23:55:57 [::1][-][r5vrbm53tcu9jeq741gkq8i5u1][error][yii\base\Exception] exception 'yii\base\Exception' with message 'No POST data found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\components\paypal_standard\IpnListener.php:286
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\components\paypal_standard\Paypal.php(139): common\modules\payment\components\paypal_standard\IpnListener->processIpn()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\paypal_standard\SiteController.php(119): common\modules\payment\components\paypal_standard\Paypal->notify()
+#2 [internal function]: common\modules\payment\controllers\paypal_standard\SiteController->actionNotify()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('notify', Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('/payment/paypal...', Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#9 {main}
+2018-08-05 23:56:03 [::1][-][r5vrbm53tcu9jeq741gkq8i5u1][error][yii\base\Exception] exception 'yii\base\Exception' with message 'No POST data found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\components\paypal_standard\IpnListener.php:286
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\components\paypal_standard\Paypal.php(139): common\modules\payment\components\paypal_standard\IpnListener->processIpn()
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\protected\common\modules\payment\controllers\paypal_standard\SiteController.php(119): common\modules\payment\components\paypal_standard\Paypal->notify()
+#2 [internal function]: common\modules\payment\controllers\paypal_standard\SiteController->actionNotify()
+#3 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#4 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#5 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('notify', Array)
+#6 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('payment/paypal_...', Array)
+#7 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#9 {main}
+2018-08-05 23:56:22 [::1][-][r5vrbm53tcu9jeq741gkq8i5u1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site/payment/paypal_standard/site/notify".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/payment/pa...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 02:01:04 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/spinner2.jpg".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('images/spinner2...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 02:01:04 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/spinner3.png".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('images/spinner3...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 02:02:56 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/spinner2.jpg".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('images/spinner2...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 02:02:56 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "images/spinner3.png".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('images/spinner3...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 03:07:00 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/images/thumbs/150_150_MzgxNjViYmíndice.jpg".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('resources/image...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 03:07:12 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/images/thumbs/150_150_MzgxNjViYmíndice.jpg".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('resources/image...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 03:07:23 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/images/thumbs/150_150_MzgxNjViYmíndice.jpg".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('resources/image...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 03:07:43 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/images/thumbs/150_150_MzgxNjViYmíndice.jpg".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('resources/image...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 03:07:49 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/images/thumbs/150_150_MzgxNjViYmíndice.jpg".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('resources/image...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 03:08:12 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/images/thumbs/150_150_MjdjZjMzZTíndice.jpg".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('resources/image...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 03:08:15 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/images/thumbs/150_150_MjdjZjMzZTíndice.jpg".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('resources/image...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 03:08:21 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/images/thumbs/50_50_MjdjZjMzZTíndice.jpg".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('resources/image...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 03:09:30 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/images/thumbs/150_150_MjdjZjMzZTíndice.jpg".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('resources/image...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 03:09:38 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/images/thumbs/50_50_MjdjZjMzZTíndice.jpg".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('resources/image...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 03:09:40 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/images/thumbs/150_150_MjdjZjMzZTíndice.jpg".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('resources/image...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 03:10:33 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/images/thumbs/150_150_MjdjZjMzZTíndice.jpg".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('resources/image...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 03:10:49 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/images/thumbs/50_50_MjdjZjMzZTíndice.jpg".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('resources/image...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 03:10:56 [::1][5][1ie9njvrkjdu4ikt8jl7l7vc64][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "resources/images/thumbs/150_150_MjdjZjMzZTíndice.jpg".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('resources/image...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 09:41:13 [::1][-][2bd0ism1adjuoqpruknsk5g1i1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/bootstrap-theme.css.map".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/bootstrap-t...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 09:41:16 [::1][-][2bd0ism1adjuoqpruknsk5g1i1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/bootstrap-theme.css.map".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/bootstrap-t...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 09:41:22 [::1][-][2bd0ism1adjuoqpruknsk5g1i1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/bootstrap-theme.css.map".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/bootstrap-t...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 09:41:28 [::1][-][2bd0ism1adjuoqpruknsk5g1i1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/bootstrap-theme.css.map".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/bootstrap-t...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 09:42:30 [::1][4][3t3962h13a9qr2705hofgn4fk3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/bootstrap-theme.css.map".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/bootstrap-t...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 09:42:35 [::1][4][3t3962h13a9qr2705hofgn4fk3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/bootstrap-theme.css.map".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/bootstrap-t...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 09:42:36 [::1][4][3t3962h13a9qr2705hofgn4fk3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/bootstrap-theme.css.map".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/bootstrap-t...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 09:42:38 [::1][4][3t3962h13a9qr2705hofgn4fk3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/bootstrap-theme.css.map".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/bootstrap-t...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
+2018-08-06 09:43:16 [::1][4][3t3962h13a9qr2705hofgn4fk3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "css/bootstrap-theme.css.map".' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('css/bootstrap-t...', Array)
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\release-2.0.1\release-2.0.1\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\release-2.0.1\release-2.0.1\index.php(47): yii\base\Application->run()
+#2 {main}
